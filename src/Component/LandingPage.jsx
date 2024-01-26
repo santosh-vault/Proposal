@@ -16,44 +16,46 @@ const LandingPage = () => {
   };
 
   return (
-    <div className="background-image">
-      <div className="container">
-        <h1 className="title">Welcome to Proposing website</h1>
-        <div className="input-container">
-          <h3>Enter your Loved One's name</h3>
+    <div className="bg-cover bg-center h-screen flex items-center justify-center">
+      <div className="text-white text-center">
+        <h1 className=" text-4xl font-bold mb-6">Welcome to Proposing website</h1>
+
+        <div className="mb-6">
+          <h3 className="text-lg mb-2">Enter your Loved One's name</h3>
           <input
             type="text"
             value={name}
-            placeholder='name'
+            placeholder='Name'
             onChange={(e) => setName(e.target.value)}
-            className="input-field"
+            className="py-2 px-4 text-gray-800 border rounded focus:outline-none focus:border-blue-500"
           />
         </div>
-        <div>
-        <button className="button" style={{margin:"0 10px"}}>
+
+        <div className="mb-6 space-x-4">
           <Link to={proposalLink}>
-          Click to view Preview
+            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+              Click to view Preview
+            </button>
           </Link>
-        </button>
-        <button
-          className="copy-link-button"
-          onClick={copyToClipboard}
-        >
-          Copy Link
-        </button>
+
+          <button
+            className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+            onClick={copyToClipboard}
+          >
+            Copy Link
+          </button>
         </div>
 
-        <div className="share-buttons" style={{marginBottom:'10px'}}>
-          <TwitterShareButton url={proposalLink} title={`Check out this proposal for ${name}`} style={{marginRight:'20px'}}>
-            <TwitterIcon size={32} round />
+        <div className="mb-6 space-x-4">
+          <TwitterShareButton url={proposalLink} title={`Check out this proposal for ${name}`}>
+            <TwitterIcon size={32} round className="mr-4" />
           </TwitterShareButton>
 
-          <FacebookShareButton url={proposalLink} style={{marginLeft:'20px'}}>
-            <FacebookIcon size={32} round />
+          <FacebookShareButton url={proposalLink}>
+            <FacebookIcon size={32} round className="ml-4" />
           </FacebookShareButton>
         </div>
-
-      
+        <p>To propose you lover, Enter the name of your loved one , copy the link then send copied link to your partner.</p>
       </div>
     </div>
   );

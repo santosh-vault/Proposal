@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App.jsx';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ProposalPage from './Component/ProposalPage.jsx';
+import './index.css'
 
 const rootElement = document.getElementById('root');
 

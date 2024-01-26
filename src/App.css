@@ -13,168 +13,17 @@ body {
     align-items: center;
     justify-content: center;
   }
-  
-  .container {
-    text-align: center;
-    color: #fff;
-  }
-  
-  h1 {
-    font-size: 3rem;
-    color: aliceblue;
-  }
-  
-  input {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-  }
-  
-  button {
-    background-color: #ff6f61;
-    color: #fff;
-    padding: 5px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  button:hover{
-    background-color: darkred;
-  }
-  
-  button a {
-    color: #fff;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 10px;
-  }
 
-  /* LandingPage.css */
-
-.input-container {
-  margin-top: 20px;
-}
-
-.input-field {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
-}
-
-.share-buttons {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-}
-
-.copy-link-button {
-  background-color: #f44336;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.copy-link-button:hover {
-  background-color: #d32f2f;
-}
-
-  
-  /* ProposalModal.css */
-  .proposal-modal {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    max-width: 400px;
-    width: 100%;
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .proposal-modal.open {
-    transform: translate(-50%, -50%) scale(1);
-  }
-  
-  .modal-content {
-    position: relative;
-  }
-  
-  .close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-    font-size: 20px;
-    color: #333;
-  }
-  
-  p {
-    margin: 20px 0;
-  }
-  
-  .button-container {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .yes-btn,
-  .no-btn,
-  .next-btn {
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin: 0 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .yes-btn:hover,
-  .no-btn:hover,
-  .next-btn:hover {
-    background-color: #45a049;
-  }
-  
-  .no-btn {
-    background-color: #f44336;
-  }
-  
-  .no-btn:hover {
-    background-color: #d32f2f;
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(5px); }
   }
   
   .shake {
-    animation: shake 0.5s ease-in-out;
+    animation: shake 0.5s ease-in-out infinite;
   }
   
-  @keyframes shake {
-    0%, 100% {
-      transform: translateX(0);
-    }
-    25%, 75% {
-      transform: translateX(-10px);
-    }
-    50% {
-      transform: translateX(10px);
-    }
-  }
   
