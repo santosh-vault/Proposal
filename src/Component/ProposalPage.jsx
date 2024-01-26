@@ -2,9 +2,7 @@ import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import ProposalModal from './ProposalModel';
 
-
 const ProposalPage = () => {
-
   const [isModalOpen, setModalOpen] = useState(false);
 
   const openModal = () => {
@@ -15,18 +13,19 @@ const ProposalPage = () => {
     setModalOpen(false);
   };
 
-const {name} = useParams();
+  const { name } = useParams();
+
   return (
     <div>
-      <h1>Hello, <span style={{color:"yellow"}}> {name}</span> </h1>
-      <button onClick={openModal}
-       style={{marginLeft: '80px', padding: '15px', fontSize: '1rem' }}
+      <h1>Hello, <span style={{ color: "yellow" }}>{name}</span> </h1>
+      <button
+        onClick={openModal}
+        style={{ marginLeft: '80px', padding: '15px', fontSize: '1rem' }}
       >
         Response
       </button>
-      <ProposalModal isOpen={isModalOpen} onClose={closeModal} />
+      {isModalOpen ? <ProposalModal isOpen={isModalOpen} onCloseProp={closeModal} /> : null}
     </div>
-    
   );
 };
 
