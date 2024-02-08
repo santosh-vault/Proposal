@@ -16,9 +16,9 @@ const LandingPage = () => {
   };
 
   return (
-    <div className="bg-cover bg-center h-screen flex items-center justify-center">
-      <div className="text-white text-center">
-        <h1 className=" text-4xl font-bold mb-6">Welcome to Proposing website</h1>
+    <div className="bg-cover bg-center min-h-screen flex items-center justify-center">
+      <div className="text-white text-center max-w-lg mx-auto p-6">
+        <h1 className="text-4xl font-bold mb-6">Welcome to Proposing website</h1>
 
         <div className="mb-6">
           <h3 className="text-lg mb-2">Enter your Loved One's name</h3>
@@ -55,7 +55,7 @@ const LandingPage = () => {
             <FacebookIcon size={32} round className="ml-4" />
           </FacebookShareButton>
         </div>
-        <p>To propose you lover, Enter the name of your loved one , copy the link then send copied link to your partner.</p>
+        <p>To propose to your lover, enter the name of your loved one, copy the link, and send the copied link to your partner.</p>
       </div>
     </div>
   );

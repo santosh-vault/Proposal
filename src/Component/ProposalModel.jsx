@@ -3,17 +3,17 @@ import { useParams } from 'react-router-dom';
 
 
 const predefinedTexts = [
-  'I always wanted to say you something',
-  'But the circumstances resist me always',
-  'But today is the special day',
-  'So, I gather bravery to tell you',
-  'That',
-  'Damn, it\'s so hard! Haha...',
-  'You may have already guessed it',
-  'Yes, You are everything to me',
-  'So',
-  'I LOVE YOU',
-  '{name}, will you be my girlfriend?',
+"I've always wanted to say something to you,",
+"But circumstances always seemed to get in the way,",
+"Today, however, is special,",
+"So, I'm summoning all my courage to finally tell you,",
+"That...",
+"Wow, this is tougher than I thought! Haha...",
+"You might have already guessed it,",
+"Yes, you mean everything to me,",
+"So...",
+"I LOVE YOU,",
+"{name}, will you be my ?",
 ];
 
 const ProposalModal = ({ isOpen, onCloseProp }) => {

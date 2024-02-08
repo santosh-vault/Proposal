@@ -8,7 +8,7 @@ const Celebrate = ({ onClose }) => {
 
   return (
     <div className="celebrate-container animate__animated animate__zoomIn" onAnimationEnd={handleAnimationEnd}>
-      <p className="animate__animated animate__bounce">🎉 WOW 🎉</p>
+      <p className="animate__animated animate__bounce">🎉I Love You, Too🎉</p>
     </div>
   );
 };
