@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
-import ProposalModal from "./ProposalModel";
-import Celebrate from "./Celebrate";
+import ProposalModal from "./Component/ProposalModel";
+import Celebrate from "./Component/Celebrate";
 import { Helmet } from "react-helmet";
 
 const ProposalPage = () => {

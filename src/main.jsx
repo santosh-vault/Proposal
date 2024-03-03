@@ -1,11 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App.jsx';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import ProposalPage from './Component/ProposalPage.jsx';
-import './index.css'
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App.jsx";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ProposalPage from "./ProposalPage.jsx";
+import "./index.css";
 
-const rootElement = document.getElementById('root');
+const rootElement = document.getElementById("root");
 
 ReactDOM.createRoot(rootElement).render(
   <React.StrictMode>

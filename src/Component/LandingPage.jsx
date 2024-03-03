@@ -1,15 +1,20 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { TwitterShareButton, FacebookShareButton, TwitterIcon, FacebookIcon } from 'react-share';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import {
+  TwitterShareButton,
+  FacebookShareButton,
+  TwitterIcon,
+  FacebookIcon,
+} from "react-share";
 
 const LandingPage = () => {
-  const [name, setName] = useState('');
+  const [name, setName] = useState("");
 
   const proposalLink = `/proposalpage/${name}`;
 
   const copyToClipboard = () => {
-    if (name.trim() === '') {
-      alert('Please enter your Loved One\'s name before copying the link.');
+    if (name.trim() === "") {
+      alert("Please enter your Loved One's name before copying the link.");
     } else {
       navigator.clipboard.writeText(window.location.origin + proposalLink);
     }
@@ -18,14 +23,16 @@ const LandingPage = () => {
   return (
     <div className="bg-cover bg-center min-h-screen flex items-center justify-center">
       <div className="text-white text-center max-w-lg mx-auto p-6">
-        <h1 className="text-4xl font-bold mb-6">Welcome to Proposing website</h1>
+        <h1 className="text-4xl font-bold mb-6">
+          Welcome to Proposing website
+        </h1>
 
         <div className="mb-6">
           <h3 className="text-lg mb-2">Enter your Loved One's name</h3>
           <input
             type="text"
             value={name}
-            placeholder='Name'
+            placeholder="Name"
             onChange={(e) => setName(e.target.value)}
             className="py-2 px-4 text-gray-800 border rounded focus:outline-none focus:border-blue-500"
           />
@@ -47,7 +54,10 @@ const LandingPage = () => {
         </div>
 
         <div className="mb-6 space-x-4">
-          <TwitterShareButton url={proposalLink} title={`Check out this proposal for ${name}`}>
+          <TwitterShareButton
+            url={proposalLink}
+            title={`Check out this proposal for ${name}`}
+          >
             <TwitterIcon size={32} round className="mr-4" />
           </TwitterShareButton>
 
@@ -55,7 +65,10 @@ const LandingPage = () => {
             <FacebookIcon size={32} round className="ml-4" />
           </FacebookShareButton>
         </div>
-        <p>To propose to your lover, enter the name of your loved one, copy the link, and send the copied link to your partner.</p>
+        <p>
+          To propose to your lover, enter the name of your loved one, copy the
+          link, and send the copied link to your partner.
+        </p>
       </div>
     </div>
   );
